@@ -46,13 +46,17 @@ header.container {
     text-decoration: none;
 }
 
-nav {
+nav ul {
     display: flex;
     flex-direction: column;
     margin-top: 55px;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav a {
+    display: block;
     padding: 15px 0;
     border-bottom: 1px solid #48403d;
     text-decoration: none;
@@ -292,7 +296,7 @@ body > button {
         text-align: center;
     }
 
-    nav {
+    nav ul {
         flex-direction: row;
         justify-content: center;
         gap: 25px;

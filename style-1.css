@@ -38,9 +38,12 @@ header {
     text-decoration: none;
 }
 
-nav {
+nav ul {
     display: flex;
     gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 nav a {
@@ -156,6 +159,7 @@ h3 {
 /* DO: fragment wygenerowany przez Codex - uklad sekcji i siatka kart menu. */
 .contact {
     border-top: 1px solid #dedfd8;
+    background: linear-gradient(120deg, #faf8f3, #f0e7d8);
     padding: 40px 0 55px;
 }
 
@@ -194,6 +198,9 @@ footer {
     nav {
         order: 3;
         width: 100%;
+    }
+
+    nav ul {
         gap: 20px;
     }
 
