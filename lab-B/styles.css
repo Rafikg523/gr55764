@@ -1,0 +1,124 @@
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #ff9800 0%, #e53935 100%);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 28px;
+  background: #ffffff;
+  border: 5px solid #000;
+  border-radius: 18px;
+  box-shadow: 0 12px 32px rgba(41, 71, 61, 0.14);
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  main {
+    padding: 18px;
+  }
+}
+
+input,
+button {
+  padding: 8px;
+  font: inherit;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+#search,
+#task-text {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tasks {
+  margin: 20px 0;
+}
+
+/* POCZĄTEK fragmentu wykonanego przez Codex: widok pojedynczego zadania. */
+.task {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-content {
+  flex: 1;
+  min-width: 0;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.task-content:focus,
+.task-date:focus {
+  outline: 2px solid #43834b;
+}
+
+.task.completed {
+  background-color: #e5e5e5;
+}
+
+.task.completed .task-content {
+  color: #777;
+  text-decoration: line-through;
+}
+
+.task.completed .task-date {
+  color: #777;
+}
+
+.task.completed mark {
+  background-color: #ddd;
+  color: #777;
+}
+
+.task-date {
+  flex: 0 0 150px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* KONIEC fragmentu wykonanego przez Codex. */
+
+/* POCZĄTEK fragmentu wykonanego przez Codex: wygląd pól edycji zadania. */
+.task-editor {
+  box-sizing: border-box;
+  min-width: 0;
+  cursor: text;
+}
+
+.task-date.task-editor {
+  width: 150px;
+}
+/* KONIEC fragmentu wykonanego przez Codex. */
+
+button {
+  cursor: pointer;
+}
+
+/* POCZĄTEK fragmentu wykonanego przez Codex: podświetlanie wyszukiwanego tekstu. */
+mark {
+  background: #ffe478;
+}
+/* KONIEC fragmentu wykonanego przez Codex. */
+
+#message {
+  color: #a12020;
+}

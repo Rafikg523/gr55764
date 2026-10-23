@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rafał Grzelak (55764) - AI LAB B</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Lista TODO</h1>
+        <label for="search">Wyszukaj zadanie:</label>
+        <input id="search" type="search" placeholder="Wpisz co najmniej 2 znaki">
+        <div id="tasks"></div>
+        <form id="add-form">
+            <label for="task-text">Nowe zadanie:</label>
+            <input id="task-text" type="text" minlength="3" maxlength="255" required>
+            <label for="task-date">Termin (opcjonalny):</label>
+            <input id="task-date" type="datetime-local">
+            <button type="submit">Dodaj</button>
+        </form>
+        <p id="message" role="status"></p>
+    </main>
+</body>
+</html>
