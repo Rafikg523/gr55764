@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - AI LAB C</title>
+    <title>Rafał Grzelak (55764) - AI LAB C</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+    <h1>Mapa – puzzle</h1>
+    <button id="location" type="button">Moja lokalizacja</button>
+    <button id="capture" type="button" disabled>Pobierz mapę</button>
+    <button id="notifications" type="button">Włącz powiadomienia</button>
+    <p id="status" role="status">Ładowanie mapy…</p>
+    <main id="panels">
+        <section><h2>1. Mapa</h2><div id="map"></div></section>
+        <section><h2>2. Zdjęcie mapy</h2><canvas id="photo" width="400" height="400"></canvas></section>
+        <section><h2>3. Rozrzucone puzzle</h2><div id="pieces"></div></section>
+        <section><h2>4. Plansza do ułożenia</h2><div id="board"></div></section>
+    </main>
 
 </body>
 </html>
