@@ -3,12 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - AI LAB D</title>
+    <title>Rafał Grzelak (55764) - AI LAB D</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+<!-- CODEX: POCZĄTEK wykonanego fragmentu -->
+<div class="app" lang="pl">
 
+    <main>
+        <section class="intro" aria-labelledby="page-title">
+            <h1 id="page-title">Pogoda</h1>
+            <form id="search-form">
+                <label for="city">Miejscowość</label>
+                <div class="search-row"><input id="city" name="city" type="text" placeholder="Wpisz miejscowość, np. Warszawa" value="Warszawa" required maxlength="100" autocomplete="address-level2"><button id="search-button" type="submit">Pogoda</button></div>
+            </form>
+        </section>
+        <p id="status" class="status" role="status" aria-live="polite">Wpisz miejscowość, aby sprawdzić pogodę.</p>
+        <section id="current-section" class="current-layout" aria-label="Pogoda bieżąca" aria-busy="false">
+            <article class="current-card">
+                <p class="section-label">Aktualnie</p>
+                <h2 id="location">Twoja miejscowość</h2><p id="current-date" class="muted">Dane aktualizowane po wyszukaniu</p>
+                <div class="weather-main"><div><p id="temperature" class="temperature">—<span>°C</span></p><p id="description" class="description">Czekamy na pogodę</p></div><div id="weather-art" class="weather-art" aria-hidden="true">☀</div></div>
+                <div class="current-bottom"><span>Odczuwalna <strong id="feels-like">—</strong></span><span>Min. <strong id="temp-min">—</strong> <span class="divider">/</span> Maks. <strong id="temp-max">—</strong></span></div>
+            </article>
+            <article class="details-card"><h2>Szczegóły</h2><div class="metrics">
+                <div class="metric"><div><p>Wiatr</p><strong id="wind">—</strong></div></div>
+                <div class="metric"><div><p>Wilgotność</p><strong id="humidity">—</strong></div></div>
+                <div class="metric"><div><p>Ciśnienie</p><strong id="pressure">—</strong></div></div>
+                <div class="metric"><div><p>Widoczność</p><strong id="visibility">—</strong></div></div>
+            </div><div class="sun-times"><span>Wschód <strong id="sunrise">—</strong></span><span>Zachód <strong id="sunset">—</strong></span></div></article>
+        </section>
+        <section class="forecast-section" aria-labelledby="forecast-title"><div class="forecast-heading"><div><h2 id="forecast-title">Kolejne 5 dni</h2></div></div><p id="forecast-status" role="status" class="muted">Tutaj pojawi się prognoza dla wybranej miejscowości.</p><div id="forecast" class="forecast-grid"></div><details id="hourly-details" hidden><summary>Zobacz prognozę co 3 godziny</summary><div class="table-scroll"><table><caption>Prognoza szczegółowa w czasie lokalnym miejscowości</caption><thead><tr><th scope="col">Dzień i godzina</th><th scope="col">Pogoda</th><th scope="col">Temperatura</th><th scope="col">Szansa opadów</th><th scope="col">Wiatr</th></tr></thead><tbody id="hourly-body"></tbody></table></div></details></section>
+    </main>
+    <footer><a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">Dane pogodowe: OpenWeather</a></footer>
+</div>
+<!-- CODEX: KONIEC wykonanego fragmentu -->
 </body>
 </html>
